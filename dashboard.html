@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>:: Student Management ::</title>
+  <title>:: Welcome to Student Portal ::</title>
   <link rel="shortcut icon" href="img/favicon.ico" />
 
   <!-- Bootstrap core CSS -->
@@ -46,7 +46,7 @@
             <i class="fa fa-times"></i>
           </div>
         </div>
-
+        
         <!-- sidebar-header  -->
         <div class="sidebar-search">
           <div>
@@ -63,116 +63,142 @@
         <!-- sidebar-search  -->
         <div class="sidebar-menu">
           <ul>
-
-            <li class="sidebar-dropdown active">
+            <li class="active">
               <a href="dashboard.html">
                 <i class="fa fa-tachometer"></i>
                 <span>Dashboard</span>
-
+              </a>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span>Student Management</span>
+               
               </a>
               <div class="sidebar-submenu">
                 <ul>
                   <li>
-                    <a href="#">Submenu 1
-
-                    </a>
+                    <a href="student_management.html">Manage Student</a>
                   </li>
                   <li>
-                    <a href="#">Submenu 2</a>
+                    <a href="#">New Student EnrollMent</a>
                   </li>
                   <li>
-                    <a href="#">Submenu 3</a>
+                    <a href="manage_batch.html">Manage Batchs</a>
                   </li>
                 </ul>
               </div>
-            </li>
-            <li class="sidebar-dropdown">
-              <a href="student_management.html">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <span>Student Management</span>
-
-              </a>
-
             </li>
             <li class="sidebar-dropdown">
               <a href="#">
                 <i class="fa fa-university" aria-hidden="true"></i>
                 <span>Campus Management</span>
               </a>
-
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="campus_management.html">Manage Campus</a>
+                  </li>
+                  <li>
+                    <a href="#">Sub Menu 2</a>
+                  </li>
+                  <li>
+                    <a href="#">Sub Menu 3</a>
+                  </li>
+                 
+                </ul>
+              </div>
             </li>
             <li class="sidebar-dropdown">
-              <a href="program_management.html">
+              <a href="#">
                 <i class="fa fa-sticky-note-o" aria-hidden="true"></i>
                 <span>Program Management</span>
               </a>
               <div class="sidebar-submenu">
                 <ul>
                   <li>
-                    <a href="#">Submenu 1
-
-                    </a>
+                    <a href="program_management.html">Manage Programs</a>
                   </li>
                   <li>
-                    <a href="#">Submenu 2</a>
+                    <a href="manage_course.html">Manage Courses</a>
                   </li>
                   <li>
-                    <a href="#">Submenu 3</a>
+                    <a href="manage_session.html">Manage Sessions</a>
                   </li>
+                  <li>
+                    <a href="manage_topics.html">Manage Topics</a>
+                  </li>
+                  
                 </ul>
               </div>
             </li>
             <li class="sidebar-dropdown">
-              <a href="schedule_management.html">
+              <a href="#">
                 <i class="fa fa-calendar" aria-hidden="true"></i>
                 <span>Schedule Management</span>
               </a>
-
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="schedule_management.html">Manage Schedule</a>
+                  </li>
+                  
+                </ul>
+              </div>
             </li>
-
             <li class="sidebar-dropdown">
               <a href="#">
                 <i class="fa fa-users" aria-hidden="true"></i>
                 <span>Faculty Management</span>
-
               </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="faculty_management.html">Manage Faculty</a>
+                  </li>
+                  <li>
+                    <a href="add_faculty.html">Add Faculty</a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="sidebar-dropdown">
+            <li>
               <a href="#">
                 <i class="fa fa-calculator" aria-hidden="true"></i>
                 <span>Account Management</span>
               </a>
             </li>
-            <li class="sidebar-dropdown">
+            <li>
               <a href="#">
                 <i class="fa fa-folder"></i>
                 <span>Assesment</span>
               </a>
             </li>
-            <li class="sidebar-dropdown">
+            <li>
               <a href="#">
                 <i class="fa fa-male" aria-hidden="true"></i>
                 <span>Leave Management Portal</span>
               </a>
             </li>
-            <li class="sidebar-dropdown">
+            <li>
               <a href="#">
                 <i class="fa fa-cogs" aria-hidden="true"></i>
                 <span>Preferences</span>
               </a>
             </li>
-            <li class="sidebar-dropdown">
-              <a href="#">
+            <li>
+              <a href="index.html">
                 <i class="fa fa-sign-out" aria-hidden="true"></i>
                 <span>Logout</span>
               </a>
             </li>
+           
+           
           </ul>
         </div>
         <!-- sidebar-menu  -->
       </div>
-      <!-- sidebar-content  -->
-
+      
     </nav>
     <!-- sidebar-wrapper  -->
     <main class="page-content">
@@ -274,6 +300,7 @@
                   </div>
                 </div>
                 <div class="week_icon">
+                  <p>This Week</p>
                   <img src="img/week_icon.png" alt="icon">
                 </div>
               </div>
@@ -299,31 +326,33 @@
                     <div class="container">
                       <h6>Highlights</h6>
                     <ul>
-                      <li class="bg_violet">
+                      <li class="bg_green">
+                        
                         <div class="high_icon">
-                          <img src="img/icon1.png" alt="icon" />
+                          <img src="img/badge.png" alt="icon" />
                         </div>
                         <div class="high_content">
                           <h4>AAKASH PATWARI</h4>
                           <p>has scored highest in his batch</p>
                           <p>Batch # DSE/B/0108/MUM/23-24</p>
                         </div>
-                       
+                        <div class="bg_wrap"><img src="img/bubble.gif" alt="icon" /></div>
+                     
                       </li>
-                      <li class="bg_blue">
+                      <li class="bg_green">
                         <div class="high_icon">
-                          <img src="img/icon2.png" alt="icon" />
+                          <img src="img/star.png" alt="icon" />
                         </div>
                         <div class="high_content">
                           <h4>AMRUT MAHAJAN</h4>
                           <p>has been rated 5 STAR for his lecture on 23-09-23 </p>
                           <p>by Batch #DMP/B/2211/MUM/23-24</p>
-                         
                         </div>
+                        <div class="bg_wrap"><img src="img/bubble.gif" alt="icon" /></div>
                       </li>
                       <li class="bg_green">
                         <div class="high_icon">
-                          <img src="img/icon3.png" alt="icon" />
+                          <img src="img/absent.png" alt="icon" />
                         </div>
                         <div class="high_content">
                           <h4>Lowest Attendance</h4>
@@ -331,33 +360,49 @@
                           <p>-DMP/B/0199/MUM/23-24:63%</p>
                           <p>-DSE/B/0299/MUM/23-24:77%</p>
                         </div>
-                      </li>
-                      <li class="bg_violet">
-                        <h2>Head line 4</h2>
-                        <p>News detail just a line jhghdsbd hsdssdhjhdjshdjsahdjs</p>
-                      </li>
-                      <li class="bg_blue">
-                        <h2>Head line 5</h2>
-                        <p>News detail just a line jhghdsbd hsdssdhjhdjshdjsahdjs</p>
+                        <div class="bg_wrap"><img src="img/bubble.gif" alt="icon" /></div>
                       </li>
                       <li class="bg_green">
-                        <h2>Head line 6</h2>
-                        <p>News detail just a line jhghdsbd hsdssdhjhdjshdjsahdjs</p>
+                        <div class="high_icon">
+                          <img src="img/cancelled.png" alt="icon" />
+                        </div>
+                        <div class="high_content">
+                          <h4>Planned lecture CANCELLED</h4>
+                          <p>By: Vijay Benegal </p>
+                          <p>On: 28/7/23 @ 16:00 to 17:00</p>
+                        </div>
+                        <div class="bg_wrap"><img src="img/bubble.gif" alt="icon" /></div>
                       </li>
-                      <li  class="bg_violet">
-                        <h2>Head line 7</h2>
-                        <p>News detail just a line jhghdsbd hsdssdhjhdjshdjsahdjs</p>
+                      <li class="bg_green">
+                        <div class="high_icon">
+                          <img src="img/student.png" alt="icon" />
+                        </div>
+                        <div class="high_content">
+                          <h4>New Student Enrolled</h4>
+                          <p>Name: Anushri Saxena </p>
+                          <p>Batch: DSE/B0151/MUM/23-24</p>
+                        </div>
+                        <div class="bg_wrap"><img src="img/bubble.gif" alt="icon" /></div>
                       </li>
-                      <li class="bg_blue">
-                        <h2>Head line 8</h2>
-                        <p>News detail just a line jhghdsbd hsdssdhjhdjshdjsahdjs</p>
+                      <li class="bg_green">
+                        <div class="high_icon">
+                          <img src="img/absence.png" alt="icon" />
+                        </div>
+                        <div class="high_content">
+                          <h4>ABSCONDING, absent since 34 days</h4>
+                          <p>Name: Surabhi Pandit</p>
+                          <p>Batch: DSE/B0151/MUM/23-24</p>
+                        </div>
+                        <div class="bg_wrap"><img src="img/bubble.gif" alt="icon" /></div>
                       </li>
+                     
                       
                     </ul>
                   </div>
                 </div>
                 </div>
                 <div class="week_icon">
+                  <p>This Month</p>
                   <img src="img/month_icon.png" alt="icon">
                 </div>
               </div>
@@ -381,7 +426,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/highcharts.js"></script>
   <script src="js/highcharts-3d.js"></script>
-  <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
+  <script src="js/highcharts_modules_variable-pie.js"></script>
   <script src="js/accessibility.js"></script>
   <!-- <script src="js/jquery.dataTables1.10.19.min.js"></script>
   <script src="js/dataTables.bootstrap4.min.js"></script> -->
@@ -446,7 +491,7 @@
    }
   setInterval( function(){
     moveTop();
-  }, 3000);
+  }, 5000);
   });
 </script>
 
@@ -471,7 +516,7 @@
       },
 
       xAxis: {
-        categories: ['19-06-23', '20-06-23', '21-06-23', '22-06-23', '23-06-23', '24-06-23'],
+        categories: ['24-07-23', '25-06-23', '26-06-23', '27-06-23', '28-06-23', '29-06-23'],
         crosshair: true,
         accessibility: {
           description: 'Countries'
@@ -588,7 +633,7 @@
       },
       series: [{
         type: 'pie',
-        name: 'Share',
+        name: '',
         data: [
           ['Sound Engineering', 56],
           ['MIDI', 18],

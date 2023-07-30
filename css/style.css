@@ -51,7 +51,7 @@ body {
 }
 
 a {
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, color 0.2s; color: #000; 
 }
 a:hover,
 a:focus {
@@ -94,7 +94,7 @@ a:focus {
   font-size: 14px;
 }
 .login_wrap {
-  width: 30%;
+  width: 300px;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -106,7 +106,7 @@ a:focus {
 .field_wrap {
   float: left;
   width: 100%;
-  margin: 10px 0;
+  margin: 6px 0;
 }
 
 .switch_wrap .form-switch .form-check-input:checked[type=checkbox]:after{margin-left: 24px;}
@@ -140,11 +140,11 @@ a:focus {
   position: absolute;
   margin: 0 auto;
   background: #fc950d;
-  padding: 20px;
+  padding: 17px;
   border-radius: 10px;
   color: #fff;
-  top: -40px;
-  box-shadow: 0rem 0.25rem 1.25rem 0rem rgba(0, 0, 0, 0.14), 0rem 0.4375rem 0.625rem -0.3125rem
+  top: -25px;
+  box-shadow: 0rem 0.25rem 1.25rem 0rem rgba(0, 0, 0, 0.14), 0rem 0.4375rem 0.625rem -0.3125rem;
 }
 .sign_wrap h6{ font-size: 1.5rem;
   text-align: center;
@@ -164,8 +164,10 @@ footer {
   float: left;
   width: 100%;
   margin: 60px 0px;
+  text-align: center;
+  color: #fff;
 }
-.foot_txt {
+.foot_txt a {
   color: #fff;
 }
 
@@ -270,6 +272,7 @@ body {
   border-radius: 0 4px 4px 0px;
   width: 35px;
   transition-delay: 0.3s;
+  z-index: 9999;
 }
 .page-wrapper.toggled #show-sidebar {
   left: -40px;
@@ -522,6 +525,15 @@ body {
   animation: sonar 1.5s infinite;
 }
 
+
+.chiller-theme .navbar {
+    width: 99%;
+    margin-left: 30px;
+}
+.chiller-theme.toggled .navbar{margin-left: 0px;}
+
+
+
 /*--------------------------page-content-----------------------------*/
 
 .page-wrapper .page-content {
@@ -690,8 +702,17 @@ body {
 }
 
 /* css for Dasboard */
-.inn_high_wrap .container ul{margin-top: -137px !important;}
-.bg_red{background-color: blueviolet !important;}
+.week_icon p {
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #000;
+}
+
+.form-select{color: #00000099;}
+.form-select:focus{border-color: #f7a047; box-shadow: none;}
+.form-control:focus{border-color: #f7a047; box-shadow: none;}
+.inn_high_wrap .container ul{margin-top: -187px !important;}
+.bg_red{background-color: #E63572 !important;}
 
 
 .page-content .sticky-top .nav-link{padding: 8px;}
@@ -722,9 +743,15 @@ body {
   height: 4rem;
   text-align: center;
 }
-.bg_violet{background-color: #C7BFE6;}
-.bg_green{background-color: #4B755F !important;}
-.bg_blue{background-color: #9AD9EA;}
+.bg_violet{background: #ff7e5f;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #feb47b, #ff7e5f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+.bg_green{background-color: #14a44d !important;}
+.bg_blue{background: #f2709c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff9472, #f2709c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff9472, #f2709c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
 .card_info i{font-size: 20px; color: #fff;}
 .card_content {
   float: left;
@@ -808,12 +835,14 @@ body {
 .table_main_wrap .tableFixHead {
   overflow: auto;
   max-height: 400px;
+  /* overflow-x: hidden; */
 }
 .table_main_wrap .tableFixHead thead th {
   position: sticky !important;
   top: 0;
+  white-space: nowrap;
 }
-.table_main_wrap table td{padding: 4px;}
+.table_main_wrap table td{padding: 4px; white-space: nowrap;}
 .mid_wrap {
   float: left;
   width: 100%;
@@ -826,13 +855,13 @@ body {
 
 .week_icon {
   position: absolute;
-  top: -30px;
+  top: -40px;
   width: 100%;
   left: 0;
   margin: 0 auto;
   text-align: center;
 }
-.week_icon img{width: 10%;}
+.week_icon img{width: 50px;}
 
 .year_wrap {
   float: left;
@@ -855,6 +884,14 @@ body {
   width: 34%;
   height: 75px;
 }
+.depart_wrap {
+  float: left;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffff;
+ 
+}
 
 .highlight_out_wrap {
   float: left;
@@ -863,16 +900,19 @@ body {
   padding: 10px;
   margin-top: 25px;
   border-radius: 10px;
-  background-color: #ffefd6;
+  background-color: #bedaf9;
   position: relative;
 }
-.highlight_out_wrap .week_icon img{width: 17%;}
-
+.highlight_out_wrap .week_icon img{width: 40px;}
+.inn_high_wrap {
+  float: left;
+  width: 100%;
+}
 .inn_high_wrap .container {
   width: 100%;
   margin: 20px auto;
   height: 415px;
-  background-color: #fff;
+  background-color: transparent;
   overflow: hidden;
   padding: 0;
 }
@@ -883,22 +923,36 @@ body {
   margin: 0;
   padding: 0;
 }
-.inn_high_wrap li{
-  height:100px;
-  /* background-color:rgba(57, 173, 117,0.3); */
-   text-align:center;
-  border-bottom:1px solid #333;
+.inn_high_wrap li {
+  height: 150px;
+  /* background-color: rgba(57, 173, 117,0.3); */
+  text-align: center;
+  border-bottom: 1px solid #333;
+  width: 100%;
+  float: left;
+  border-radius: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 9;
+ 
+}
+.inn_high_wrap .bg_green{background: #effff5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f7797d, #FBD786, #effff5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f7797d, #FBD786, #effff5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 .inn_high_wrap h2{
   color:#000000;
   padding-top:10px;
+  text-align: left;
 }
 .inn_high_wrap p {
   text-align: left;
   padding: 0px;
   color: #000000;
   margin-bottom: 0;
-  font-size: 12px;
+  font-size: 14px;
+  color: #000000;
 }
 .high_icon {
   float: left;
@@ -910,13 +964,30 @@ body {
 .high_content {
   float: left;
   width: 75%;
+  padding: 0px 10px;
 }
 .high_content h4{font-size: 18px;
   font-weight: 700;
   margin-bottom: 0;
   margin: 10px 0px;
-  padding: 0px 0px;}
-
+  padding: 0px 0px;
+  text-align: left;
+}
+/* .bg_wrap {
+  background-image: url(../img/bubble.gif);
+  background-repeat: repeat;
+  background-size: auto;
+  height: 100%;
+} */
+.bg_wrap {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.bg_wrap img {
+  opacity: 0.2;
+  filter: sepia(1);
+}
 /* CSS For Student Management */
 .select_wrap{margin-bottom: 10px;}
 .filter_wrap {
@@ -962,7 +1033,8 @@ body {
   box-shadow: none;
   padding: 0px !important;
   line-height: 0px;
-  height: 30px;
+  height: 20px;
+  width: 20px;
 }
 .tab_btn button i{color: #000; font-size: 20px;}
 
@@ -977,11 +1049,17 @@ body {
   width: 100%;
 }
 .student_img img{width: 100%;}
-.accord_wrap .accordion-button{padding: 8px 15px;}
+.accord_wrap .accordion-button {
+  padding: 8px 15px;
+  border-top: 1px solid #ccc;
+}
 .accord_wrap .input_wrap{margin-bottom: 10px;}
 
 
 /* CSS For Campus Management */
+.table_main_wrap .tableFixHead{float: left; width: 100%;}
+
+.table_main_wrap table a{color: #4F46E5;}
 .add_campus_wrap {
   float: left;
   width: 100%;
@@ -1018,6 +1096,9 @@ body {
 .action_btn .btn-warning{background-color: #f7a047;}
 
 /* CSS For Program Management */
+.radio_wrap {
+  margin-top: 5px;
+}
 .tab_btn button img{width:20px;}
 .tab_btn button:hover{background-color: transparent;}
 .tab_btn button:focus{background-color: transparent; box-shadow: none;}
@@ -1038,7 +1119,16 @@ body {
   transform: rotate(180deg);
   margin-right: 10px;
 }
-
+label{color: #000;}
+.work_exp_box {
+  width: 100%;
+  text-align: center;
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: -3px;
+}
+.work_exp_box h6{margin-bottom: 0;}
 
 /* CSS For Manage Session Screen */
 #core_session .modal-body .select_wrap{margin-bottom: 10px;} 
@@ -1059,6 +1149,22 @@ body {
 /* .mul_wrap .filter-option-inner-inner{display: none;} */
 
 /* CSS For Schedule management */
+.img_bg_box {
+  position: absolute;
+  top: 75px;
+  right: 30px;
+  text-align: end;
+  bottom: 0;
+  display: inline-block;
+  width: 30%;
+  height: 67%;
+}
+.img_bg_box img {
+  width: 100%;
+}
+.fc-row.fc-week.fc-widget-content.fc-rigid{height: 85px !important;}
+.fc-scroller.fc-day-grid-container{height: 525px !important;}
+.fc-state-active{background-color: #f7a047 !important;}
 
 .open_cal_wrap .list-group-item{display: none;}
 .download{ padding: 1.25rem; border:0; border-radius:3px; background-color:#4F46E5; color:#fff;cursor:pointer; text-decoration:none;}
@@ -1075,12 +1181,16 @@ body {
 .custom_modal .modal-dialog{max-width: 90%;}
 .custom_modal .modal-header {
   padding: 10px;
-  background-color: #f7a047;
-  color: #fff;
+  background-color: #ffd7a4;
+  color: #000;
 }
 .custom_modal .modal-header h6{margin-bottom: 0;}
 .custom_modal .form-control{margin-bottom: 10px;}
 .custom_modal .form-select{margin-bottom: 10px;}
+.custom_modal .modal-body label {
+  font-weight: 700;
+  line-height: 30px;
+}
 .fc-unthemed .fc-today{background-color: #16c7ff !important;}
 .fc-basic-view .fc-day-number{color: #000 !important; text-decoration: none !important;}
 

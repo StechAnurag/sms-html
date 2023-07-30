@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>:: Student Management ::</title>
+  <title>:: Welcome to Student Portal ::</title>
   <link rel="shortcut icon" href="img/favicon.ico" />
 
   <!-- Bootstrap core CSS -->
@@ -25,14 +25,15 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="fonts/font-awesome.min.css">
   <link rel="stylesheet" href="fonts/stylesheet.css">
+  <link rel='stylesheet' href='css/bootstrap-select.min.css'>
   <!-- <link rel="stylesheet" href="css/all.min.css"> -->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-  <link rel='stylesheet' href='https://fullcalendar.io/js/fullcalendar-3.0.1/fullcalendar.min.css'>
-  <link rel='stylesheet'
-    href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/css/bootstrap-datetimepicker.min.css'>
+  <link rel='stylesheet' href='css/fullcalendar.min.css'>
+  <!-- <link rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/css/bootstrap-datetimepicker.min.css'> -->
 </head>
 
 <body>
@@ -47,11 +48,11 @@
         <div class="sidebar-brand">
           <a href="#"><img src="img/logo-ct.png" alt="icon">SMS Portal</a>
           <div id="close-sidebar">
-            <i class="fa fa-times"></i>
+            <i class="fas fa-times"></i>
           </div>
         </div>
-
-       
+        
+        <!-- sidebar-header  -->
         <div class="sidebar-search">
           <div>
             <div class="input-group">
@@ -64,165 +65,153 @@
             </div>
           </div>
         </div>
-       
+        <!-- sidebar-search  -->
         <div class="sidebar-menu">
           <ul>
-
-            <li class="sidebar-dropdown ">
+            <li class="">
               <a href="dashboard.html">
                 <i class="fa fa-tachometer"></i>
                 <span>Dashboard</span>
-
               </a>
-              <div class="sidebar-submenu">
-              <ul>
-                <li>
-                  <a href="#">Submenu 1</a>
-                </li>
-                <li>
-                  <a href="#">Submenu 2</a>
-                </li>
-                <li>
-                  <a href="#">Submenu 3</a>
-                </li>
-              </ul>
-            </div>
             </li>
-            <li class="sidebar-dropdown active">
-              <a href="student_management.html">
+            <li class="sidebar-dropdown">
+              <a href="#">
                 <i class="fa fa-user" aria-hidden="true"></i>
                 <span>Student Management</span>
-
+               
               </a>
               <div class="sidebar-submenu">
                 <ul>
                   <li>
-                    <a href="#">Submenu 1</a>
+                    <a href="student_management.html">Manage Student</a>
                   </li>
                   <li>
-                    <a href="#">Submenu 2</a>
+                    <a href="#">New Student EnrollMent</a>
                   </li>
                   <li>
-                    <a href="#">Submenu 3</a>
+                    <a href="manage_batch.html">Manage Batchs</a>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="sidebar-dropdown">
-              <a href="campus_management.html">
+              <a href="#">
                 <i class="fa fa-university" aria-hidden="true"></i>
                 <span>Campus Management</span>
               </a>
               <div class="sidebar-submenu">
                 <ul>
                   <li>
-                    <a href="#">Submenu 1</a>
+                    <a href="campus_management.html">Manage Campus</a>
                   </li>
                   <li>
-                    <a href="#">Submenu 2</a>
+                    <a href="#">Sub Menu 2</a>
                   </li>
                   <li>
-                    <a href="#">Submenu 3</a>
+                    <a href="#">Sub Menu 3</a>
                   </li>
+                 
                 </ul>
               </div>
             </li>
-            <li class="">
-              <a href="program_management.html">
+            <li class="sidebar-dropdown">
+              <a href="#">
                 <i class="fa fa-sticky-note-o" aria-hidden="true"></i>
                 <span>Program Management</span>
               </a>
-
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="program_management.html">Manage Programs</a>
+                  </li>
+                  <li>
+                    <a href="manage_course.html">Manage Courses</a>
+                  </li>
+                  <li>
+                    <a href="manage_session.html">Manage Sessions</a>
+                  </li>
+                  <li>
+                    <a href="manage_topics.html">Manage Topics</a>
+                  </li>
+                  
+                </ul>
+              </div>
             </li>
-            <li class="sidebar-dropdown ">
-              <a href="schedule_management.html">
+            <li class="sidebar-dropdown active">
+              <a href="#">
                 <i class="fa fa-calendar" aria-hidden="true"></i>
                 <span>Schedule Management</span>
               </a>
               <div class="sidebar-submenu">
                 <ul>
                   <li>
-                    <a href="#">Submenu 1</a>
+                    <a href="schedule_management.html">Manage Schedule</a>
                   </li>
-                  <li>
-                    <a href="#">Submenu 2</a>
-                  </li>
-                  <li>
-                    <a href="#">Submenu 3</a>
-                  </li>
+                  
                 </ul>
               </div>
             </li>
-
             <li class="sidebar-dropdown">
               <a href="#">
                 <i class="fa fa-users" aria-hidden="true"></i>
                 <span>Faculty Management</span>
-
               </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="faculty_management.html">Manage Faculty</a>
+                  </li>
+                  <li>
+                    <a href="add_faculty.html">Add Faculty</a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="sidebar-dropdown">
+            <li>
               <a href="#">
                 <i class="fa fa-calculator" aria-hidden="true"></i>
                 <span>Account Management</span>
               </a>
             </li>
-            <li class="sidebar-dropdown">
+            <li>
               <a href="#">
                 <i class="fa fa-folder"></i>
                 <span>Assesment</span>
               </a>
             </li>
-            <li class="sidebar-dropdown">
+            <li>
               <a href="#">
                 <i class="fa fa-male" aria-hidden="true"></i>
                 <span>Leave Management Portal</span>
               </a>
             </li>
-            <li class="sidebar-dropdown">
+            <li>
               <a href="#">
                 <i class="fa fa-cogs" aria-hidden="true"></i>
                 <span>Preferences</span>
               </a>
             </li>
-            <li class="sidebar-dropdown">
-              <a href="#">
+            <li>
+              <a href="index.html">
                 <i class="fa fa-sign-out" aria-hidden="true"></i>
                 <span>Logout</span>
               </a>
             </li>
+           
+           
           </ul>
         </div>
-      
+        <!-- sidebar-menu  -->
       </div>
-      
-
+     
+    
     </nav>
     <!-- sidebar-wrapper  -->
     <main class="page-content">
       <div class="container">
         <div class="row">
-          <!-- <div class="col-lg-3">
-            <div class="open_cal_wrap">
-
-
-              <div class="col d-flex flex-column">
-
-                <div class="dropdown-center">
-
-                  <div class="dropdown-menu p-0">
-                    <div data-bs-toggle="calendar" id="calendar_dropdown" data-bs-target="events.json"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div data-bs-toggle="calendar" id="calendar_inline" class="col shadow rounded"
-                  data-bs-target="events.json"></div>
-              </div>
-
-            </div>
-          </div> -->
-          <div class="col-lg-12">
+         
+          <div class="col-lg-12 mrtop10">
             <div class="">
               <div id='calendar'></div>
               <div class="custom_modal">
@@ -230,7 +219,7 @@
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h6>Add New Event</h6>
+                        <h6>Add New Schedule</h6>
                         <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button> -->
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -238,7 +227,7 @@
                       </div>
                       <div class="modal-body">
                         <div class="row">
-                          <div class="col-lg-5">
+                          <div class="col-lg-4">
                             <div class="row">
                               <label class="col-lg-2" for="starts-at">When</label>
                               <div class="col-lg-6">
@@ -249,9 +238,9 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-lg-5">
+                          <div class="col-lg-4">
                             <div class="row">
-                              <label class="col-lg-1" for="starts-at"><i class="fa fa-long-arrow-right"
+                              <label class="col-lg-1 mrtop5" for="starts-at"><i class="fa fa-long-arrow-right"
                                   aria-hidden="true"></i></label>
                               <div class="col-lg-7">
                                 <input type="date" class="form-control" />
@@ -263,11 +252,12 @@
                           </div>
                           <div class="col-lg-2">
                             <div class="row">
-                              <label class="col-lg-3">30m</label>
+                             
                               <div class="col-lg-9">
                                 <div class="field_wrap switch_wrap">
                                   <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
+                                    <input class="form-check-input" type="checkbox" role="switch"
+                                      id="flexSwitchCheckChecked" checked />
                                     <label class="form-check-label" for="flexSwitchCheckChecked">All day</label>
                                   </div>
                                 </div>
@@ -277,25 +267,25 @@
 
                         </div>
                         <div class="row">
-                          <div class="col-lg-5">
+                          <div class="col-lg-4">
                             <div class="row">
                               <label class="col-lg-2">For</label>
                               <div class="col-lg-10">
                                 <select class="form-select">
-                                  <option>select batch</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
+                                  <option>Select Batch</option>
+                                  <option>Batch 1</option>
+                                  <option>Batch 2</option>
+                                  <option>Batch 3</option>
                                 </select>
                               </div>
                             </div>
                           </div>
-                          <div class="col-lg-5">
+                          <div class="col-lg-4">
                             <div class="row">
                               <label class="col-lg-2">Type</label>
                               <div class="col-lg-10">
                                 <select class="form-select">
-                                  <option>select Type</option>
+                                  <option>Select Type</option>
                                   <option>Theory</option>
                                   <option>Practical</option>
                                   <option>Studio</option>
@@ -305,12 +295,12 @@
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-lg-5">
+                          <div class="col-lg-4">
                             <div class="row">
                               <label class="col-lg-2">Where</label>
                               <div class="col-lg-10">
                                 <select class="form-select">
-                                  <option>select Training Venue</option>
+                                  <option>Select Training Venue</option>
                                   <option>Location 1</option>
                                   <option>Location 2</option>
                                   <option>Location 3</option>
@@ -318,21 +308,89 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-lg-5">
+                          <div class="col-lg-4">
                             <div class="field_wrap switch_wrap">
                               <div class="form-check form-switch">
                                 <label class="form-check-label" for="flexSwitchCheckChecked">Online Training</label>
-                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
-                                
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                  id="flexSwitchCheckChecked" checked />
+
                               </div>
                             </div>
                           </div>
 
                         </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary" id="save-event">Save</button>
+                        <div class="row">
+                          <div class="col-lg-3">
+                            <div class="row">
+                              <label class="col-lg-3">What</label>
+                              <div class="col-lg-8">
+                                <div class="field_wrap switch_wrap">
+                                  <div class="form-check form-switch">
+                                    <label class="form-check-label" for="flexSwitchCheckChecked">Main Program</label>
+                                    <input class="form-check-input" type="checkbox" role="switch"
+                                      id="flexSwitchCheckChecked" checked />
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-5 select_box">
+                            <div class="row">
+                              <div class="col-lg-12 mrbot10">
+                                <select class="form-select">
+                                  <option>Select Program</option>
+                                  <option>Program 1</option>
+                                  <option>Program 2</option>
+                                  <option>Program 3</option>
+                                </select>
+                              </div>
+                              <div class="col-lg-12 mrbot10">
+                                <select class="form-select">
+                                  <option>Select Course</option>
+                                  <option>Course 1</option>
+                                  <option>Course 2</option>
+                                  <option>Course 3</option>
+                                </select>
+                              </div>
+                              <div class="col-lg-12 mrbot10">
+                                <select class="form-select">
+                                  <option>Select Session</option>
+                                  <option>Session 1</option>
+                                  <option>Session 2</option>
+                                  <option>Session 3</option>
+                                </select>
+                              </div>
+                              <div class="col-lg-12 ">
+                                <div class="mul_wrap">
+
+                                  <select class="selectpicker form-select" multiple aria-label="Default select example"
+                                    data-live-search="true">
+                                    <option value="1">Topic 1</option>
+                                    <option value="2">Topic 2</option>
+                                    <option value="3">Topic 3</option>
+                                    <option value="4">Topic 4</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+
+
                         </div>
+                        <div class="img_bg_box">
+                          <img src="img/schedule_bg.png" alt="image">
+                        </div>
+
+                        <div class="modal-footer">
+                          <div class="action_btn">
+                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-warning" id="save-event">Save</button>
+                          </div>
+                        </div>
+
                       </div>
                       <!-- /.modal-content -->
                     </div>
@@ -354,11 +412,10 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/mdb.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="js/jquery.bs.calendar.js"></script> -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment-with-locales.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.js'></script>
-  <script
-    src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/js/bootstrap-datetimepicker.min.js'></script>
+  <script src='js/bootstrap-select.min.js'></script>
+  <script src='js/moment-with-locales.min.js'></script>
+  <script src='js/fullcalendar.js'></script>
+
   <script>
     $(".sidebar-dropdown > a").click(function () {
       $(".sidebar-submenu").slideUp(200);
@@ -484,30 +541,30 @@
       });
 
       // Bind the dates to datetimepicker.
-      $("#starts-at, #ends-at").datetimepicker();
+      //$("#starts-at, #ends-at").datetimepicker();
 
       //click to save "save"
-      $("#save-event").on("click", function (event) {
-        var title = $("#title").val();
-        if (title) {
-          var eventData = {
-            title: title,
-            start: $("#starts-at").val(),
-            end: $("#ends-at").val()
-          };
-          $("#calendar").fullCalendar("renderEvent", eventData, true); // stick? = true
-        }
-        $("#calendar").fullCalendar("unselect");
+      // $("#save-event").on("click", function (event) {
+      //   var title = $("#title").val();
+      //   if (title) {
+      //     var eventData = {
+      //       title: title,
+      //       start: $("#starts-at").val(),
+      //       end: $("#ends-at").val()
+      //     };
+      //     $("#calendar").fullCalendar("renderEvent", eventData, true); // stick? = true
+      //   }
+      //   $("#calendar").fullCalendar("unselect");
 
-        // Clear modal inputs
-        $(".modal")
-          .find("input")
-          .val("");
-        // hide modal
-        $(".modal").modal("hide");
-      });
+      //   // Clear modal inputs
+      //   $(".modal")
+      //     .find("input")
+      //     .val("");
+      //   // hide modal
+      //   $(".modal").modal("hide");
+      // });
 
-      $("textarea").autosize();
+      //$("textarea").autosize();
     });
   </script>
 </body>
