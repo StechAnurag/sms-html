@@ -1130,6 +1130,10 @@ label{color: #000;}
 }
 .work_exp_box h6{margin-bottom: 0;}
 
+button:disabled{cursor:not-allowed;}
+
+
+
 /* CSS For Manage Session Screen */
 #core_session .modal-body .select_wrap{margin-bottom: 10px;} 
 #core_session .modal-body .inp_wrap{margin-bottom: 10px;}
